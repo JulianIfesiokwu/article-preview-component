@@ -8,12 +8,14 @@ const information = document.querySelector('.information');
 function toggleDisplayMedia() {
     if(about.style.display === 'flex') {
         about.style.display = 'none';
-        information.classList.add('no-padding-bottom')
+        information.classList.add('no-padding-bottom');
         socialLinks.style.display = 'flex';
+        information.style.borderRadius = '0';
     } else {
         about.style.display = 'flex';
         socialLinks.style.display = 'none';
         information.classList.remove('no-padding-bottom');
+        information.style.borderRadius = '0 0 10px 10px';
     }
 }
 

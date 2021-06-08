@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" media="screen and (min-width: 600px)" href="./stylesheets/main.css">
+  <link rel="stylesheet" media="screen and (min-width: 140px) and (max-width: 600px)" href="./stylesheets/mobile.css">
   
   <title>Frontend Mentor | Article preview component</title>
 </head>
@@ -15,7 +16,7 @@
 
         <!-- Main display image -->
         <div class="big-image">
-            <img src="./images/drawers.jpg" class="main-image" alt="">
+            <img src="./images/drawers.jpg" class="main-image" alt="drawers">
         </div>
 
         <!-- information -->
@@ -30,34 +31,32 @@
             </p>
 
             <!-- about -->
-        <div class="about">
-            <div>
-                <img src="./images/avatar-michelle.jpg" class="icon-img" alt="">
-            </div>
+            <div class="about">
+                <div>
+                    <img src="./images/avatar-michelle.jpg" class="icon-img" alt="avatar-michelle">
+                </div>
 
-            <div class="personal-info">
-                <p>Michelle Appleton</p>
-                <p>28 Jun 2020</p>
-            </div>
+                <div class="personal-info">
+                    <p class="name">Michelle Appleton</p>
+                    <p class="date">28 Jun 2020</p>
+                </div>
 
-            <div class="share">
-                <img src="./images/icon-share.svg" alt="">
-            </div>
+                <div class="share">
+                    <img src="./images/icon-share.svg" class="share-icon" alt="icon-share">
+                </div>
 
-        </div>
+            </div>
 
         </div>
         
         <!-- social-links -->
         <div class="social-links">
             <p>SHARE</p>
-            <img class="media-links" src="./images/icon-facebook.svg" alt="">
-            <img class="media-links" src="./images/icon-pinterest.svg" alt="">
-            <img class="media-links" src="./images/icon-twitter.svg" alt="">
-            <img class="icons-share" src="./images/icon-share.svg" alt="">
-
+            <img class="media-links" src="./images/icon-facebook.svg" alt="icon-facebook">
+            <img class="media-links" src="./images/icon-pinterest.svg" alt="icon-pinterest">
+            <img class="media-links" src="./images/icon-twitter.svg" alt="icon-twitter">
+            <img class="icons-share" src="./images/icon-share.svg" alt="icons-share">
         </div>
-
 
     </div>
   
