@@ -3,6 +3,7 @@ const about = document.querySelector('.about');
 const socialLinks = document.querySelector('.social-links');
 const returnBtn = document.querySelector('.icons-share');
 const information = document.querySelector('.information');
+const mediaQuery = window.matchMedia("(max-width: 600px)")
 
 // functions
 function toggleDisplayMedia() {
@@ -22,6 +23,7 @@ function toggleDisplayMedia() {
 // event listeners
 shareIcon.addEventListener('click', toggleDisplayMedia);
 returnBtn.addEventListener('click', toggleDisplayMedia);
+
 
 // at startup
 toggleDisplayMedia();
